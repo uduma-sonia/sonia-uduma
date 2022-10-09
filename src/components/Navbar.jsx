@@ -5,7 +5,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Navbar() {
   return (
-    <nav className="text-slate-200 px-[1rem] md:px-[4rem] h-[80px]">
+    <nav className="text-slate-200 px-[1rem] md:px-[4rem] h-[100px]">
       <div className="flex items-center justify-end h-full font-light text-sm">
         <a
           className="flex items-center gap-1 hover:scale-110 transition ease-in-out duration-500"

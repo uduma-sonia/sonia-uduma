@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { FiDownload, FiGithub } from "react-icons/fi";
-import { VscLinkExternal } from "react-icons/vsc";
+import { FiDownload } from "react-icons/fi";
+import ProjectsCard from "./ProjectsCard";
 
 export default function Hero() {
   return (
@@ -53,45 +53,8 @@ export default function Hero() {
         <div className="md:w-[50%] w-full">
           {allProjects?.map((item) => {
             return (
-              <div
-                key={item.name}
-                className="bg-[#121617] mb-5 rounded-xl p-5 hover:translate-x-2 ease-in-out duration-500 hover:shadow-md"
-              >
-                <h4 className="text-2xl font-medium mb-4 underline">
-                  {item.name}
-                </h4>
-
-                <p className="text-sm font-extralight tracking-wide">
-                  {item.description}
-                </p>
-
-                <div className="mt-5">
-                  <ul className="text-xs text-slate-400 flex gap-3">
-                    {item.tools?.map((tool) => (
-                      <li key={tool}>{tool}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="mt-5 flex gap-5 justify-end">
-                  <a
-                    href={item.github_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 transition ease-in-out duration-500"
-                  >
-                    <FiGithub />
-                  </a>
-
-                  <a
-                    href={item.live_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:scale-110 transition ease-in-out duration-500"
-                  >
-                    <VscLinkExternal />
-                  </a>
-                </div>
+              <div key={item.name}>
+                <ProjectsCard data={item} />
               </div>
             );
           })}
@@ -101,21 +64,47 @@ export default function Hero() {
   );
 }
 
-// border border-[#444545]
-
 const allProjects = [
   {
     name: "Anonry",
     description:
       "A web app for taking personal notes that can be shared anonymously with others.",
-    tools: ["Nextjs", "Typescript", "Chakra ui", "swr", "pwa"],
+    tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI", "SWR", "PWA"],
     github_link: "https://github.com/uduma-sonia/anonry",
     live_link: "https://anonry.netlify.app/signup",
   },
   {
+    name: "Triangle.",
+    description: "Personalized career guide for everyone!",
+    tools: [
+      "NEXTJS",
+      "TYPESCRIPT",
+      "CHAKRA UI",
+      "REACT QUERY",
+      "CONTEXT API",
+      "PWA",
+    ],
+    live_link: "https://triangle.africa/",
+  },
+  {
+    name: "PayPal Clone",
+    description: (
+      <>
+        A clone of{" "}
+        <a href="https://www.paypal.com/ng/home" className="underline">
+          PayPal
+        </a>{" "}
+        home, signup and login page.
+      </>
+    ),
+    tools: ["NEXTJS", "TAILWIND CSS"],
+    github_link: "https://github.com/uduma-sonia/paypal-clone",
+    live_link: "https://paypal-clone.vercel.app/",
+  },
+  {
     name: "Pickup",
-    description: "Landing page for a ride hailing platform",
-    tools: ["Nextjs", "GSAP", "Tailwind"],
+    description: "Landing page for a ride hailing platform.",
+    tools: ["NEXTJS", "GSAP", "TAILWIND CSS"],
     github_link: "https://github.com/uduma-sonia/Pickup",
     live_link: "https://sonia-pickup.netlify.app/",
   },
