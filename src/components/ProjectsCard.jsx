@@ -5,9 +5,11 @@ import { VscLinkExternal } from "react-icons/vsc";
 export default function ProjectsCard({ data }) {
   return (
     <div className="bg-[#121617] border border-gray-800 mb-5 rounded-xl p-5 hover:translate-x-2 ease-in-out duration-500 hover:shadow-md">
-      <h4 className="text-xl font-medium mb-4 underline">{data.name}</h4>
+      <h4 className="text-lg lg:text-xl font-medium mb-4 underline">
+        {data.name}
+      </h4>
 
-      <p className="text-[13px] font-extralight tracking-wide">
+      <p className="text-xs lg:text-[13px] font-extralight tracking-wide">
         {data.description}
       </p>
 

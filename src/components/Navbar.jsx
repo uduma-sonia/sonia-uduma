@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="text-slate-200 px-[1rem] md:px-[4rem] h-[80px]">
       <div className="flex items-center justify-end h-full font-light text-sm">
         <a
-          className="flex items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:block"
+          className="items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:flex"
           href="https://github.com/uduma-sonia"
           target="_blank"
           rel="noopener noreferrer"
@@ -15,7 +15,7 @@ export default function Navbar() {
           Github
         </a>
         <a
-          className="mx-10 flex items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:block"
+          className="mx-10 items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:flex"
           href="https://www.linkedin.com/in/sonia-uduma-3529501ba/"
           target="_blank"
           rel="noopener noreferrer"
@@ -25,7 +25,7 @@ export default function Navbar() {
         </a>
 
         <a
-          className="flex items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:block"
+          className="items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:flex"
           href="https://twitter.com/Sonia_Uduma"
           target="_blank"
           rel="noopener noreferrer"

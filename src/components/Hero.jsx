@@ -1,6 +1,7 @@
 import React from "react";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { FiDownload } from "react-icons/fi";
+import { IoMdArrowDropright } from "react-icons/io";
+import { FiDownload, FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
 import ProjectsCard from "./ProjectsCard";
 
 export default function Hero() {
@@ -22,8 +23,33 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="mt-10 flex items-center">
-            <div className="w-16 h-16 hidden lg:block">
+          <div className="mt-10 flex">
+            <a
+              href="https://github.com/uduma-sonia"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiGithub size="1.2rem" />
+            </a>
+            <a
+              className="mx-8"
+              href="https://www.linkedin.com/in/sonia-uduma-3529501ba/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiLinkedin size="1.2rem" />
+            </a>
+            <a
+              href="https://twitter.com/Sonia_Uduma"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiTwitter size="1.2rem" />
+            </a>
+          </div>
+
+          <div className="mt-10 hidden lg:flex items-center">
+            <div className="w-16 h-16">
               <img src="/memoji.png" className="w-full h-full object-cover" />
             </div>
 
@@ -50,7 +76,11 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="lg:w-[50%] w-full hidden md:block">
+        <div className="lg:w-[50%] w-full mt-20 lg:mt-0">
+          <p className="lg:hidden my-4 text-sm flex items-center">
+            Projects <IoMdArrowDropright />
+          </p>
+
           {allProjects?.map((item) => {
             return (
               <div key={item.name}>
