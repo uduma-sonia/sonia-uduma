@@ -1,12 +1,12 @@
 import React from "react";
 import { MdOutlineAlternateEmail } from "react-icons/md";
-import { FiDownload } from "react-icons/fi";
-import { IoMdArrowDropright } from "react-icons/io";
+import { FiDownload, FiGithub } from "react-icons/fi";
+import { VscLinkExternal } from "react-icons/vsc";
 
 export default function Hero() {
   return (
     <div className="text-slate-200 px-[1rem] md:px-[4rem] pt-10">
-      <div className="flex items-center justify-between">
+      <div className="flex items-start justify-between">
         <div className="md:w-[50%] w-full">
           <p className="font-normal text-xl">Hi, I'm</p>
 
@@ -31,6 +31,8 @@ export default function Hero() {
               <a
                 className="mr-10 flex text-slate-200 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
                 href="mailto:sohnyauduma@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <MdOutlineAlternateEmail size="0.8rem" />
                 Email
@@ -38,6 +40,8 @@ export default function Hero() {
               <a
                 className="flex text-slate-200 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
                 href="https://drive.google.com/file/d/1bkVrce8RQFXXITi70Vjg3t5g3yeTE_gV/view"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FiDownload size="0.8rem" />
                 Resume
@@ -46,30 +50,73 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* <div className="md:w-[50%] w-full flex">
-          <div className="md:w-[50%] w-full">
-            <p className="flex items-center text-sm text-slate-200">
-              <IoMdArrowDropright size="1.2rem" />
-              <span className="pl-2">JavaScript</span>
-            </p>
-            <p className="flex items-center text-sm text-slate-200 mt-7">
-              <IoMdArrowDropright size="1.2rem" />
-              <span className="pl-2">React</span>
-            </p>
-          </div>
+        <div className="md:w-[50%] w-full">
+          {allProjects?.map((item) => {
+            return (
+              <div
+                key={item.name}
+                className="bg-[#121617] mb-5 rounded-xl p-5 hover:translate-x-2 ease-in-out duration-500 hover:shadow-md"
+              >
+                <h4 className="text-2xl font-medium mb-4 underline">
+                  {item.name}
+                </h4>
 
-          <div className="md:w-[50%] w-full">
-            <p className="flex items-center text-sm text-slate-200">
-              <IoMdArrowDropright size="1.2rem" />
-              <span className="pl-2">TypeScript</span>
-            </p>
-            <p className="flex items-center text-sm text-slate-200 mt-9">
-              <IoMdArrowDropright size="1.2rem" />
-              <span className="pl-2">Next.js</span>
-            </p>
-          </div>
-        </div> */}
+                <p className="text-sm font-extralight tracking-wide">
+                  {item.description}
+                </p>
+
+                <div className="mt-5">
+                  <ul className="text-xs text-slate-400 flex gap-3">
+                    {item.tools?.map((tool) => (
+                      <li key={tool}>{tool}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-5 flex gap-5 justify-end">
+                  <a
+                    href={item.github_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:scale-110 transition ease-in-out duration-500"
+                  >
+                    <FiGithub />
+                  </a>
+
+                  <a
+                    href={item.live_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:scale-110 transition ease-in-out duration-500"
+                  >
+                    <VscLinkExternal />
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
 }
+
+// border border-[#444545]
+
+const allProjects = [
+  {
+    name: "Anonry",
+    description:
+      "A web app for taking personal notes that can be shared anonymously with others.",
+    tools: ["Nextjs", "Typescript", "Chakra ui", "swr", "pwa"],
+    github_link: "https://github.com/uduma-sonia/anonry",
+    live_link: "https://anonry.netlify.app/signup",
+  },
+  {
+    name: "Pickup",
+    description: "Landing page for a ride hailing platform",
+    tools: ["Nextjs", "GSAP", "Tailwind"],
+    github_link: "https://github.com/uduma-sonia/Pickup",
+    live_link: "https://sonia-pickup.netlify.app/",
+  },
+];

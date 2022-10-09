@@ -1,5 +1,5 @@
 import React from "react";
-import { DiGithubBadge } from "react-icons/di";
+import { FiGithub } from "react-icons/fi";
 import { TiSocialTwitter } from "react-icons/ti";
 import { AiFillLinkedin } from "react-icons/ai";
 
@@ -11,14 +11,16 @@ export default function Navbar() {
           className="flex items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
           href="https://github.com/uduma-sonia"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          <DiGithubBadge size="0.8rem" />
+          <FiGithub size="0.8rem" />
           Github
         </a>
         <a
           className="mx-10 flex items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
-          // href="mailto:sohnyauduma@gmail.com"
           href="https://www.linkedin.com/in/sonia-uduma-3529501ba/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <AiFillLinkedin size="0.8rem" />
           LinkedIn
@@ -28,6 +30,7 @@ export default function Navbar() {
           className="flex items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
           href="https://twitter.com/Sonia_Uduma"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <TiSocialTwitter size="0.8rem" />
           Twitter
