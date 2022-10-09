@@ -6,16 +6,16 @@ import ProjectsCard from "./ProjectsCard";
 export default function Hero() {
   return (
     <div className="text-slate-200 px-[1rem] md:px-[4rem] pt-10">
-      <div className="flex items-start justify-between">
-        <div className="md:w-[50%] w-full">
-          <p className="font-normal text-xl">Hi, I'm</p>
+      <div className="flex items-start justify-between flex-col lg:flex-row">
+        <div className="lg:w-[50%] w-full">
+          <p className="font-normal text-lg text-slate-400">Hi, I'm</p>
 
-          <h2 className="text-4xl md:text-5xl font-medium mt-3 tracking-tighter">
+          <h2 className="text-3xl lg:text-4xl font-medium mt-3 tracking-tighter">
             Sonia Uduma.
           </h2>
 
-          <div className="mt-9">
-            <p className="font-light text-sm max-w-md">
+          <div className="mt-3">
+            <p className="font-extralight text-xs lg:text-sm max-w-xs lg:max-w-md">
               I am a frontend engineer focused on creating amazing and
               interactive products for the web. Capable of identifying
               opportunities to improve front-end design and the user experience.
@@ -23,13 +23,13 @@ export default function Hero() {
           </div>
 
           <div className="mt-10 flex items-center">
-            <div className="w-16 h-16">
+            <div className="w-16 h-16 hidden lg:block">
               <img src="/memoji.png" className="w-full h-full object-cover" />
             </div>
 
-            <div className="ml-7 flex items-center">
+            <div className="lg:ml-7 flex items-center">
               <a
-                className="mr-10 flex text-slate-200 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
+                className="mr-10 flex border px-3 py-2 rounded-md border-gray-700 text-slate-200 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
                 href="mailto:sohnyauduma@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -38,7 +38,7 @@ export default function Hero() {
                 Email
               </a>
               <a
-                className="flex text-slate-200 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
+                className="flex text-slate-200 border px-3 py-2 rounded-md border-gray-700 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
                 href="https://drive.google.com/file/d/1bkVrce8RQFXXITi70Vjg3t5g3yeTE_gV/view"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="md:w-[50%] w-full">
+        <div className="lg:w-[50%] w-full hidden md:block">
           {allProjects?.map((item) => {
             return (
               <div key={item.name}>
