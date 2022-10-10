@@ -20,7 +20,7 @@ export default function Technologies() {
         <li>Firebase</li>
       </ul>
 
-      <p className="mb-4 mt-5 text-sm flex items-center">
+      <p className="mb-4 mt-6 text-sm flex items-center">
         Familiar With <IoMdArrowDropright />
       </p>
 

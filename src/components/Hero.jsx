@@ -88,7 +88,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="lg:w-[50%] w-full mt-20 lg:mt-0">
+        <div className="lg:w-[50%] w-full mt-10 lg:mt-0">
           <p className="lg:hidden my-4 text-sm flex items-center">
             Projects <IoMdArrowDropright />
           </p>
@@ -147,6 +147,25 @@ export default function Hero() {
             })}
           </div>
         </div>
+      </div>
+
+      <div className="mt-14 lg:hidden">
+        <Technologies />
+      </div>
+
+      <div className="w-14 h-14 mt-20 lg:hidden mx-auto">
+        <img src="/memoji.png" className="w-full h-full object-cover" />
+      </div>
+
+      <div className="text-center mt-3">
+        <a
+          href="mailto:sohnyauduma@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="lg:hidden text-[10px] text-slate-600"
+        >
+          sohnyauduma@gmail
+        </a>
       </div>
     </div>
   );

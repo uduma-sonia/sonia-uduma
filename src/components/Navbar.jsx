@@ -33,9 +33,22 @@ export default function Navbar() {
           <FiTwitter size="0.8rem" />
           Twitter
         </a>
-        <div className="w-14 h-14 mt-5 lg:hidden">
-          <img src="/memoji.png" className="w-full h-full object-cover" />
-        </div>
+
+        <a
+          className="mr-10"
+          href="mailto:sohnyauduma@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Email
+        </a>
+        <a
+          href="https://drive.google.com/file/d/1bkVrce8RQFXXITi70Vjg3t5g3yeTE_gV/view"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
       </div>
     </nav>
   );
