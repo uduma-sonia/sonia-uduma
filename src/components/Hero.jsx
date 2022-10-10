@@ -180,12 +180,12 @@ const allProjects = [
     github_link: "https://github.com/uduma-sonia/anonry",
     live_link: "https://anonry.netlify.app/signup",
   },
-  {
-    name: "Triangle.",
-    description: "Personalized career guide for everyone!",
-    tools: ["NEXTJS", "TYPESCRIPT", "REACT QUERY", "CONTEXT API", "PWA"],
-    live_link: "https://triangle.africa/",
-  },
+  // {
+  //   name: "Triangle.",
+  //   description: "Personalized career guide for everyone!",
+  //   tools: ["NEXTJS", "TYPESCRIPT", "REACT QUERY", "CONTEXT API", "PWA"],
+  //   live_link: "https://triangle.africa/",
+  // },
   {
     name: "PayPal Clone",
     description: (
