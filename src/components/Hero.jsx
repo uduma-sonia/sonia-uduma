@@ -1,8 +1,16 @@
 import React from "react";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoMdArrowDropright } from "react-icons/io";
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
 import { FiDownload, FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
 import ProjectsCard from "./ProjectsCard";
+import Technologies from "./Technologies";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Autoplay } from "swiper";
 
 export default function Hero() {
   return (
@@ -23,7 +31,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="mt-10 flex">
+          <div className="mt-10 flex lg:hidden">
             <a
               href="https://github.com/uduma-sonia"
               target="_blank"
@@ -74,6 +82,10 @@ export default function Hero() {
               </a>
             </div>
           </div>
+
+          <div className="mt-10 hidden lg:block">
+            <Technologies />
+          </div>
         </div>
 
         <div className="lg:w-[50%] w-full mt-20 lg:mt-0">
@@ -81,13 +93,59 @@ export default function Hero() {
             Projects <IoMdArrowDropright />
           </p>
 
-          {allProjects?.map((item) => {
-            return (
-              <div key={item.name}>
-                <ProjectsCard data={item} />
-              </div>
-            );
-          })}
+          <div className="lg:hidden">
+            <Swiper
+              spaceBetween={10}
+              modules={[Navigation, Autoplay]}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: true,
+              }}
+              navigation={{
+                prevEl: ".project_prev_button",
+                nextEl: ".project_next_button",
+              }}
+              slidesPerView={1.1}
+              breakpoints={{
+                640: {
+                  width: 640,
+                  slidesPerView: 2,
+                },
+                1200: {
+                  width: 1200,
+                  slidesPerView: 3,
+                },
+              }}
+            >
+              {allProjects?.map((item) => {
+                return (
+                  <SwiperSlide key={item.name}>
+                    <ProjectsCard data={item} />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+
+            <div className="flex justify-end">
+              <button className="project_prev_button mr-7">
+                <BsFillArrowLeftCircleFill size="1.4rem" color="#5f6061" />
+              </button>
+
+              <button className="project_next_button">
+                <BsFillArrowRightCircleFill size="1.4rem" color="#5f6061" />
+              </button>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            {allProjects?.map((item) => {
+              return (
+                <div key={item.name}>
+                  <ProjectsCard data={item} />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
@@ -106,14 +164,7 @@ const allProjects = [
   {
     name: "Triangle.",
     description: "Personalized career guide for everyone!",
-    tools: [
-      "NEXTJS",
-      "TYPESCRIPT",
-      "CHAKRA UI",
-      "REACT QUERY",
-      "CONTEXT API",
-      "PWA",
-    ],
+    tools: ["NEXTJS", "TYPESCRIPT", "REACT QUERY", "CONTEXT API", "PWA"],
     live_link: "https://triangle.africa/",
   },
   {
