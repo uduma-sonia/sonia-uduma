@@ -35,7 +35,7 @@ export default function Navbar() {
         </a>
 
         <a
-          className="mr-10"
+          className="mr-10 lg:hidden"
           href="mailto:sohnyauduma@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -45,6 +45,7 @@ export default function Navbar() {
         <a
           href="https://drive.google.com/file/d/1bkVrce8RQFXXITi70Vjg3t5g3yeTE_gV/view"
           target="_blank"
+          className="lg:hidden"
           rel="noopener noreferrer"
         >
           Resume
