@@ -1,8 +1,9 @@
 import React from "react";
 import { FiGithub } from "react-icons/fi";
-import { VscLinkExternal } from "react-icons/vsc";
+import { VscLinkExternal, VscPackage } from "react-icons/vsc";
 
 export default function ProjectsCard({ data }) {
+  console.log(data);
   return (
     <div className="bg-[#121617] h-[220px] lg:h-[200px] flex flex-col justify-between border border-gray-800 mb-5 rounded-xl p-5 hover:translate-x-2 ease-in-out duration-500 hover:shadow-md">
       <div>
@@ -24,25 +25,39 @@ export default function ProjectsCard({ data }) {
       </div>
 
       <div className="mt-5 flex gap-5 justify-end">
-        {data?.github_link && (
+        {data?.npm && (
           <a
-            href={data.github_link}
+            href={data.live_link}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 transition ease-in-out duration-500"
           >
-            <FiGithub />
+            <VscPackage size="1.3rem" />
           </a>
         )}
+        {!data?.npm && (
+          <>
+            {data?.github_link && (
+              <a
+                href={data.github_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:scale-110 transition ease-in-out duration-500"
+              >
+                <FiGithub />
+              </a>
+            )}
 
-        <a
-          href={data.live_link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-110 transition ease-in-out duration-500"
-        >
-          <VscLinkExternal />
-        </a>
+            <a
+              href={data.live_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:scale-110 transition ease-in-out duration-500"
+            >
+              <VscLinkExternal />
+            </a>
+          </>
+        )}
       </div>
     </div>
   );

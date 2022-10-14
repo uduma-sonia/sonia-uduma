@@ -179,12 +179,22 @@ const allProjects = [
     tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI", "SWR", "PWA"],
     github_link: "https://github.com/uduma-sonia/anonry",
     live_link: "https://anonry.netlify.app/signup",
+    npm: false,
+  },
+  {
+    name: "React-select-several",
+    description:
+      "Customizable select and input field for React that enables users to select and input multiple options.",
+    tools: ["NEXTJS", "TYPESCRIPT"],
+    live_link: "https://www.npmjs.com/package/react-select-several",
+    npm: true,
   },
   // {
   //   name: "Triangle.",
   //   description: "Personalized career guide for everyone!",
   //   tools: ["NEXTJS", "TYPESCRIPT", "REACT QUERY", "CONTEXT API", "PWA"],
   //   live_link: "https://triangle.africa/",
+  // npm: false,
   // },
   {
     name: "PayPal Clone",
@@ -200,6 +210,7 @@ const allProjects = [
     tools: ["NEXTJS", "TAILWIND CSS"],
     github_link: "https://github.com/uduma-sonia/paypal-clone",
     live_link: "https://paypal-clone.vercel.app/",
+    npm: false,
   },
   {
     name: "Pickup",
@@ -207,5 +218,6 @@ const allProjects = [
     tools: ["NEXTJS", "GSAP", "TAILWIND CSS"],
     github_link: "https://github.com/uduma-sonia/Pickup",
     live_link: "https://sonia-pickup.netlify.app/",
+    npm: false,
   },
 ];
