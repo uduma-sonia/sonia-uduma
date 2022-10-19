@@ -1,12 +1,10 @@
-@import "@fontsource/inter/100.css";
-@import "@fontsource/inter/200.css";
-@import "@fontsource/inter/300.css";
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/500.css";
-@import "@fontsource/inter/600.css";
-@import "@fontsource/inter/700.css";
-@import "@fontsource/inter/800.css";
-@import "@fontsource/inter/900.css";
+@import "@fontsource/poppins/100.css";
+@import "@fontsource/poppins/200.css";
+@import "@fontsource/poppins/300.css";
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
 
 @tailwind base;
 @tailwind components;
@@ -16,8 +14,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Inter", Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
-    Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 0.005em;
   scroll-behavior: smooth;
   background-color: #13191a;
@@ -34,4 +32,8 @@ body {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.test_input_class {
+  border: 1px solid red;
 }

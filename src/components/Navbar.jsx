@@ -24,7 +24,7 @@ export default function Navbar() {
           LinkedIn
         </a>
 
-        <a
+        {/* <a
           className="items-center gap-1 hover:scale-110 transition ease-in-out duration-500 hidden lg:flex"
           href="https://twitter.com/Sonia_Uduma"
           target="_blank"
@@ -32,7 +32,7 @@ export default function Navbar() {
         >
           <FiTwitter size="0.8rem" />
           Twitter
-        </a>
+        </a> */}
 
         <a
           className="mr-10 lg:hidden"

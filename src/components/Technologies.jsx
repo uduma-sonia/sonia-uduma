@@ -17,6 +17,7 @@ export default function Technologies() {
         <li>Next JS</li>
         <li>GraphQL</li>
         <li>Redux</li>
+        <li>Jest</li>
         <li>Firebase</li>
       </ul>
 

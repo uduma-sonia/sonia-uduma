@@ -24,10 +24,10 @@ export default function Hero() {
           </h2>
 
           <div className="mt-3">
-            <p className="font-extralight text-xs lg:text-sm max-w-xs lg:max-w-md">
+            <p className="font-extralight text-sm max-w-xs lg:max-w-md">
               I am a frontend engineer focused on creating amazing and
               interactive products for the web. Capable of identifying
-              opportunities to improve front-end design and the user experience.
+              opportunities to improve front-end design and user experience.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiGithub size="1.2rem" />
+              <FiGithub size="1.4rem" />
             </a>
             <a
               className="mx-8"
@@ -45,15 +45,15 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiLinkedin size="1.2rem" />
+              <FiLinkedin size="1.4rem" />
             </a>
-            <a
+            {/* <a
               href="https://twitter.com/Sonia_Uduma"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FiTwitter size="1.2rem" />
-            </a>
+            </a> */}
           </div>
 
           <div className="mt-10 hidden lg:flex items-center">
@@ -89,8 +89,8 @@ export default function Hero() {
         </div>
 
         <div className="lg:w-[50%] w-full mt-10 lg:mt-0">
-          <p className="lg:hidden my-4 text-sm flex items-center">
-            Projects <IoMdArrowDropright />
+          <p className="text-slate-400 my-4 text-sm flex items-center">
+            Featured <IoMdArrowDropright />
           </p>
 
           <div className="lg:hidden">
@@ -128,11 +128,11 @@ export default function Hero() {
 
             <div className="flex justify-end">
               <button className="project_prev_button mr-7">
-                <BsFillArrowLeftCircleFill size="1.4rem" color="#5f6061" />
+                <BsFillArrowLeftCircleFill size="1.7rem" color="#5f6061" />
               </button>
 
               <button className="project_next_button">
-                <BsFillArrowRightCircleFill size="1.4rem" color="#5f6061" />
+                <BsFillArrowRightCircleFill size="1.7rem" color="#5f6061" />
               </button>
             </div>
           </div>
@@ -182,6 +182,13 @@ const allProjects = [
     npm: false,
   },
   {
+    name: "Triangle.",
+    description: "Personalized career guide for everyone!",
+    tools: ["NEXTJS", "TYPESCRIPT", "REACT QUERY", "CONTEXT API", "PWA"],
+    live_link: "https://triangle.africa/",
+    npm: false,
+  },
+  {
     name: "React-select-several",
     description:
       "Customizable select and input field for React that enables users to select and input multiple options.",
@@ -189,13 +196,6 @@ const allProjects = [
     live_link: "https://www.npmjs.com/package/react-select-several",
     npm: true,
   },
-  // {
-  //   name: "Triangle.",
-  //   description: "Personalized career guide for everyone!",
-  //   tools: ["NEXTJS", "TYPESCRIPT", "REACT QUERY", "CONTEXT API", "PWA"],
-  //   live_link: "https://triangle.africa/",
-  // npm: false,
-  // },
   {
     name: "PayPal Clone",
     description: (
