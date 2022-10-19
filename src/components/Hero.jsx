@@ -5,7 +5,7 @@ import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
-import { FiDownload, FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
+import { FiDownload, FiLinkedin, FiGithub } from "react-icons/fi";
 import ProjectsCard from "./ProjectsCard";
 import Technologies from "./Technologies";
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -1,5 +1,5 @@
 import React from "react";
-import { FiTwitter, FiLinkedin, FiGithub } from "react-icons/fi";
+import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 export default function Navbar() {
   return (
