@@ -24,7 +24,10 @@ export default function Hero() {
           </h2>
 
           <div className="mt-3">
-            <p className="font-extralight text-sm max-w-xs lg:max-w-md">
+            <p
+              className="font-extralight text-sm max-w-xs lg:max-w-md"
+              style={{ lineHeight: "23px" }}
+            >
               I am a frontend engineer focused on creating amazing and
               interactive products for the web. Capable of identifying
               opportunities to improve frontend design and user experience.
@@ -73,7 +76,7 @@ export default function Hero() {
               </a>
               <a
                 className="flex text-slate-200 border px-3 py-2 rounded-md border-gray-700 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
-                href="https://drive.google.com/file/d/1bkVrce8RQFXXITi70Vjg3t5g3yeTE_gV/view"
+                href="https://drive.google.com/file/d/1pG7OoRejKSPibpTdNbxMMZ6ukSzE7_-r/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

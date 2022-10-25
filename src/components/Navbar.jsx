@@ -43,7 +43,7 @@ export default function Navbar() {
           Email
         </a>
         <a
-          href="https://drive.google.com/file/d/1bkVrce8RQFXXITi70Vjg3t5g3yeTE_gV/view"
+          href="https://drive.google.com/file/d/1pG7OoRejKSPibpTdNbxMMZ6ukSzE7_-r/view?usp=sharing"
           target="_blank"
           className="lg:hidden"
           rel="noopener noreferrer"
