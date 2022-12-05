@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <div className="text-slate-200 px-[1rem] md:px-[4rem] pt-10">
       <div className="flex items-start justify-between flex-col lg:flex-row">
-        <div className="lg:w-[50%] w-full">
+        <div className="lg:w-[50%] w-full lg:sticky top-5">
           <p className="font-normal text-lg text-slate-400">Hi, I'm</p>
 
           <h2 className="text-3xl lg:text-4xl font-medium mt-3 tracking-tighter">
@@ -50,13 +50,6 @@ export default function Hero() {
             >
               <FiLinkedin size="1.4rem" />
             </a>
-            {/* <a
-              href="https://twitter.com/Sonia_Uduma"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FiTwitter size="1.2rem" />
-            </a> */}
           </div>
 
           <div className="mt-10 hidden lg:flex items-center">
