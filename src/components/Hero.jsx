@@ -120,7 +120,7 @@ export default function Hero() {
                 },
               }}
             >
-              {allProjects?.map((item) => {
+              {featuredProects?.map((item) => {
                 return (
                   <SwiperSlide key={item.name}>
                     <ProjectsCard data={item} />
@@ -141,7 +141,65 @@ export default function Hero() {
           </div>
 
           <div className="hidden lg:block">
-            {allProjects?.map((item) => {
+            {featuredProects?.map((item) => {
+              return (
+                <div key={item.name}>
+                  <ProjectsCard data={item} />
+                </div>
+              );
+            })}
+          </div>
+
+          <p className="text-slate-400 mb-4 mt-10 text-sm flex items-center">
+            Others <IoMdArrowDropright />
+          </p>
+
+          <div className="lg:hidden">
+            <Swiper
+              spaceBetween={10}
+              modules={[Navigation, Autoplay]}
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: true,
+              }}
+              navigation={{
+                prevEl: ".other_project_prev_button",
+                nextEl: ".other_project_next_button",
+              }}
+              slidesPerView={1.1}
+              breakpoints={{
+                640: {
+                  width: 640,
+                  slidesPerView: 2,
+                },
+                1200: {
+                  width: 1200,
+                  slidesPerView: 3,
+                },
+              }}
+            >
+              {otherProjects?.map((item) => {
+                return (
+                  <SwiperSlide key={item.name}>
+                    <ProjectsCard data={item} />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+
+            <div className="flex justify-end">
+              <button className="other_project_prev_button mr-7">
+                <BsFillArrowLeftCircleFill size="1.7rem" color="#5f6061" />
+              </button>
+
+              <button className="other_project_next_button">
+                <BsFillArrowRightCircleFill size="1.7rem" color="#5f6061" />
+              </button>
+            </div>
+          </div>
+
+          <div className="hidden lg:block">
+            {otherProjects?.map((item) => {
               return (
                 <div key={item.name}>
                   <ProjectsCard data={item} />
@@ -174,14 +232,12 @@ export default function Hero() {
   );
 }
 
-const allProjects = [
+const featuredProects = [
   {
-    name: "Anonry",
-    description:
-      "A web app for taking personal notes that can be shared anonymously with others.",
+    name: "Sync!",
+    description: "Project management app.",
     tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI", "SWR", "PWA"],
-    github_link: "https://github.com/uduma-sonia/anonry",
-    live_link: "https://anonry.netlify.app/signup",
+    live_link: "https://teamsync.tools/",
     npm: false,
   },
   {
@@ -191,6 +247,18 @@ const allProjects = [
     live_link: "https://triangle.africa/",
     npm: false,
   },
+  {
+    name: "Anonry",
+    description:
+      "A web app for taking personal notes that can be shared anonymously with others.",
+    tools: ["NEXTJS", "TYPESCRIPT", "SWR", "PWA"],
+    github_link: "https://github.com/uduma-sonia/anonry",
+    live_link: "https://anonry.netlify.app/signup",
+    npm: false,
+  },
+];
+
+const otherProjects = [
   {
     name: "React-select-several",
     description:
