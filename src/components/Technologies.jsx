@@ -19,6 +19,7 @@ export default function Technologies() {
         <li>GraphQL</li>
         <li>Redux</li>
         <li>Cypress</li>
+        <li>SWR</li>
       </ul>
 
       <p className="mb-4 mt-6 text-sm flex items-center">
