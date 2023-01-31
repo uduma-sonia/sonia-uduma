@@ -15,10 +15,10 @@ export default function Technologies() {
         <li>TypeScript</li>
         <li>React JS</li>
         <li>Next JS</li>
+        <li>Vite JS</li>
         <li>GraphQL</li>
         <li>Redux</li>
         <li>Cypress</li>
-        <li>Firebase</li>
       </ul>
 
       <p className="mb-4 mt-6 text-sm flex items-center">
@@ -26,9 +26,11 @@ export default function Technologies() {
       </p>
 
       <ul className="text-xs text-slate-400 flex gap-5 max-w-sm flex-wrap">
-        <li>PWAs</li>
+        <li>Git</li>
         <li>Wordpress</li>
+        <li>Firebase</li>
         <li>SEO</li>
+        <li>PWAs</li>
         <li>Version Control</li>
       </ul>
     </div>
