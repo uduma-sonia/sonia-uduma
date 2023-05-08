@@ -227,9 +227,16 @@ export default function Hero() {
 
 const featuredProects = [
   {
+    name: "IYKYKTV",
+    description: "An entertainment platform",
+    tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI", "SWR", "PWA"],
+    live_link: "https://iykyktv.live/",
+    npm: false,
+  },
+  {
     name: "Sync!",
     description: "Project management app.",
-    tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI", "SWR", "PWA"],
+    tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI"],
     live_link: "https://teamsync.tools/",
     npm: false,
   },
@@ -241,6 +248,24 @@ const featuredProects = [
     npm: false,
   },
   {
+    name: "SEFI",
+    description: "Social entertainment for innovators",
+    tools: ["VITEJS", "TYPESCRIPT"],
+    live_link: "https://sefi.wtf/",
+    npm: false,
+  },
+
+  {
+    name: "FutureFest",
+    // description: "An entertainment platform",
+    tools: ["REACTJS", "TYPESCRIPT", "CHAKRA UI", "SWR", "PWA"],
+    live_link: "https://futurefest.live/",
+    npm: false,
+  },
+];
+
+const otherProjects = [
+  {
     name: "Anonry",
     description:
       "A web app for taking personal notes that can be shared anonymously with others.",
@@ -249,9 +274,6 @@ const featuredProects = [
     live_link: "https://anonry.netlify.app/signup",
     npm: false,
   },
-];
-
-const otherProjects = [
   {
     name: "React-select-several",
     description:
