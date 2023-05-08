@@ -18,7 +18,7 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   letter-spacing: 0.005em;
   scroll-behavior: smooth;
-  background-color: #13191a;
+  background-color: #13191a !important;
 
   @supports (letter-spacing: 0.005cap) {
     letter-spacing: 0.005cap;
