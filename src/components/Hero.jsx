@@ -28,9 +28,7 @@ export default function Hero() {
               className="font-extralight text-sm max-w-xs lg:max-w-md"
               style={{ lineHeight: "23px" }}
             >
-              I am a front-end engineer focused on creating amazing and
-              interactive products for the web. Capable of identifying
-              opportunities to improve front-end design and user experience.
+              I build accessible and interactive products for the web.
             </p>
           </div>
 
