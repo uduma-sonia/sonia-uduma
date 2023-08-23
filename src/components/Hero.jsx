@@ -52,7 +52,10 @@ export default function Hero() {
 
           <div className="mt-10 hidden lg:flex items-center">
             <div className="w-16 h-16">
-              <img src="/memoji.png" className="w-full h-full object-cover" />
+              <img
+                src="/memoji.png"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
 
             <div className="lg:ml-7 flex items-center">
