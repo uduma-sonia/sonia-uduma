@@ -28,7 +28,7 @@ export default function Hero() {
               className="font-extralight text-sm max-w-xs lg:max-w-md"
               style={{ lineHeight: "23px" }}
             >
-              I build accessible and interactive products for the web.
+              I build accessible and amazing products for the web.
             </p>
           </div>
 
