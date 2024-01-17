@@ -1,11 +1,11 @@
 import React from "react";
-import { MdOutlineAlternateEmail } from "react-icons/md";
 import { IoMdArrowDropright } from "react-icons/io";
 import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
 } from "react-icons/bs";
 import { FiDownload, FiLinkedin, FiGithub } from "react-icons/fi";
+import { IoMailOutline } from "react-icons/io5";
 import ProjectsCard from "./ProjectsCard";
 import Technologies from "./Technologies";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,7 +17,7 @@ export default function Hero() {
     <div className="text-slate-200 px-[1rem] md:px-[4rem] pt-10">
       <div className="flex items-start justify-between flex-col lg:flex-row">
         <div className="lg:w-[50%] w-full lg:sticky top-5">
-          <p className="font-normal text-lg text-slate-400">Hi, I'm</p>
+          <p className="font-normal text-lg text-slate-400">Hello, I'm</p>
 
           <h2 className="text-3xl lg:text-4xl font-medium mt-3 tracking-tighter">
             Sonia Uduma.
@@ -28,7 +28,8 @@ export default function Hero() {
               className="font-extralight text-sm max-w-xs lg:max-w-md"
               style={{ lineHeight: "23px" }}
             >
-              I build accessible and amazing products for the web.
+              I am an experienced front-end developer and
+              <br />I build amazing products for the web.
             </p>
           </div>
 
@@ -60,17 +61,17 @@ export default function Hero() {
 
             <div className="lg:ml-7 flex items-center">
               <a
-                className="mr-10 flex border px-3 py-2 rounded-md border-gray-700 text-slate-200 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
+                className="mr-10 shadow-xl flex border px-3 py-2 rounded-md border-gray-700 text-slate-200 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
                 href="mailto:sohnyauduma@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MdOutlineAlternateEmail size="0.8rem" />
+                <IoMailOutline size="0.8rem" />
                 Email
               </a>
               <a
                 className="flex text-slate-200 border px-3 py-2 rounded-md border-gray-700 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
-                href="https://drive.google.com/file/d/1b1x84rBHnFigcivC-Gj8yISGIuXDsD4H/view?usp=sharing"
+                href="https://drive.google.com/file/d/1k5NZWBi5kY-IfRl-zivMSXJCm9FFsso1/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -229,24 +230,16 @@ export default function Hero() {
 const featuredProects = [
   {
     name: "SoftLife",
-    // description: "An entertainment platform",
+    description: "A lifestyle and financial app for young adults",
     tools: ["SVELTEKIT", "TYPESCRIPT", "TAILWINDCSS", "PWA"],
     live_link: "https://softlife.vip/",
     npm: false,
   },
   {
-    name: "SEFI",
-    description: "Social entertainment for innovators",
-    tools: ["VITEJS", "TYPESCRIPT"],
-    live_link: "https://sefi.wtf/",
-    npm: false,
-  },
-
-  {
-    name: "Sync!",
-    description: "Project management app.",
-    tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI"],
-    live_link: "https://teamsync.tools/",
+    name: "Mov3",
+    description: "Radio station",
+    tools: ["REACT", "TYPESCRIPT", "TAILWINDCSS", "PWA"],
+    live_link: "https://mov3.live/",
     npm: false,
   },
   {
@@ -257,12 +250,26 @@ const featuredProects = [
     npm: false,
   },
   {
-    name: "IYKYKTV",
-    description: "An entertainment platform",
-    tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI", "SWR", "PWA"],
-    live_link: "https://iykyktv.live/",
+    name: "SEFI",
+    description: "Social entertainment for innovators",
+    tools: ["VITEJS", "TYPESCRIPT"],
+    live_link: "https://sefi.wtf/",
     npm: false,
   },
+  {
+    name: "Sync!",
+    description: "Project management app.",
+    tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI"],
+    live_link: "https://teamsync.tools/",
+    npm: false,
+  },
+  // {
+  //   name: "IYKYKTV",
+  //   description: "An entertainment platform",
+  //   tools: ["NEXTJS", "TYPESCRIPT", "CHAKRA UI", "SWR", "PWA"],
+  //   live_link: "https://iykyktv.live/",
+  //   npm: false,
+  // },
 ];
 
 const otherProjects = [
@@ -289,22 +296,22 @@ const otherProjects = [
     live_link: "https://www.npmjs.com/package/react-select-several",
     npm: true,
   },
-  {
-    name: "PayPal Clone",
-    description: (
-      <>
-        A clone of{" "}
-        <a href="https://www.paypal.com/ng/home" className="underline">
-          PayPal
-        </a>{" "}
-        home, signup and login page.
-      </>
-    ),
-    tools: ["NEXTJS", "TAILWIND CSS"],
-    github_link: "https://github.com/uduma-sonia/paypal-clone",
-    live_link: "https://paypal-clone.vercel.app/",
-    npm: false,
-  },
+  // {
+  //   name: "PayPal Clone",
+  //   description: (
+  //     <>
+  //       A clone of{" "}
+  //       <a href="https://www.paypal.com/ng/home" className="underline">
+  //         PayPal
+  //       </a>{" "}
+  //       home, signup and login page.
+  //     </>
+  //   ),
+  //   tools: ["NEXTJS", "TAILWIND CSS"],
+  //   github_link: "https://github.com/uduma-sonia/paypal-clone",
+  //   live_link: "https://paypal-clone.vercel.app/",
+  //   npm: false,
+  // },
   {
     name: "Pickup",
     description: "Landing page for a ride hailing platform.",

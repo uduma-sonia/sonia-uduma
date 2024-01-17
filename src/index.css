@@ -37,3 +37,18 @@ body {
 .test_input_class {
   border: 1px solid red;
 }
+
+.slide_in_left {
+  animation: 0.3s linear 0s slideInLeft;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
