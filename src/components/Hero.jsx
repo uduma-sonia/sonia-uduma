@@ -71,7 +71,7 @@ export default function Hero() {
               </a>
               <a
                 className="flex text-slate-200 border px-3 py-2 rounded-md border-gray-700 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
-                href="https://drive.google.com/file/d/1k5NZWBi5kY-IfRl-zivMSXJCm9FFsso1/view?usp=sharing"
+                href='https://drive.google.com/file/d/1V0FQ-RHkBqYz8nvjC5UFmZqPD8irJN2l/view?usp=sharing'
                 target="_blank"
                 rel="noopener noreferrer"
               >
