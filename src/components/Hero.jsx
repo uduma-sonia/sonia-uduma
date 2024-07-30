@@ -71,7 +71,7 @@ export default function Hero() {
               </a>
               <a
                 className="flex text-slate-200 border px-3 py-2 rounded-md border-gray-700 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
-                href='https://drive.google.com/file/d/1V0FQ-RHkBqYz8nvjC5UFmZqPD8irJN2l/view?usp=sharing'
+                href="https://drive.google.com/file/d/1V0FQ-RHkBqYz8nvjC5UFmZqPD8irJN2l/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -235,18 +235,18 @@ const featuredProects = [
     live_link: "https://softlife.vip/",
     npm: false,
   },
-  {
-    name: "Mov3",
-    description: "Radio station",
-    tools: ["REACT", "TYPESCRIPT", "TAILWINDCSS", "PWA"],
-    live_link: "https://mov3.live/",
-    npm: false,
-  },
+  // {
+  //   name: "Mov3",
+  //   description: "Radio station",
+  //   tools: ["REACT", "TYPESCRIPT", "TAILWINDCSS", "PWA"],
+  //   live_link: "https://mov3.live/",
+  //   npm: false,
+  // },
   {
     name: "Triangle.",
     description: "Personalized career guide for everyone!",
     tools: ["NEXTJS", "TYPESCRIPT", "REACT QUERY", "CONTEXT API", "PWA"],
-    live_link: "https://triangle.africa/",
+    live_link: "https://triangl0.netlify.app/",
     npm: false,
   },
   {
