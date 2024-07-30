@@ -246,7 +246,7 @@ const featuredProects = [
     name: "Triangle.",
     description: "Personalized career guide for everyone!",
     tools: ["NEXTJS", "TYPESCRIPT", "REACT QUERY", "CONTEXT API", "PWA"],
-    live_link: "https://triangl0.netlify.app/",
+    live_link: "https://triangle0.netlify.app/",
     npm: false,
   },
   {
