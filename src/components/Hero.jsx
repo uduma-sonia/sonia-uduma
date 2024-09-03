@@ -232,7 +232,7 @@ const featuredProects = [
     name: "SoftLife",
     description: "A lifestyle and financial app for young adults",
     tools: ["SVELTEKIT", "TYPESCRIPT", "TAILWINDCSS", "PWA"],
-    live_link: "https://softlife.vip/",
+    live_link: "https://softlife.vip/about",
     npm: false,
   },
   // {
