@@ -235,6 +235,13 @@ const featuredProects = [
     live_link: "https://softlife.vip/about",
     npm: false,
   },
+  {
+    name: "LensForGood",
+    description: "",
+    tools: ["SVELTEKIT", "TAILWINDCSS", "PWA"],
+    live_link: "https://lensforgood.com/",
+    npm: false,
+  },
   // {
   //   name: "Mov3",
   //   description: "Radio station",
