@@ -242,6 +242,13 @@ const featuredProects = [
     live_link: "https://lensforgood.com/",
     npm: false,
   },
+  {
+    name: "Lendhive",
+    description: "Rent And Lend Items With Ease",
+    tools: ["REACT", "TYPESCRIPT", "TAILWINDCSS"],
+    live_link: "https://lendhive.app",
+    npm: false,
+  },
   // {
   //   name: "Mov3",
   //   description: "Radio station",
