@@ -238,14 +238,14 @@ const featuredProects = [
   {
     name: "LensForGood",
     description: "",
-    tools: ["SVELTEKIT", "TAILWINDCSS", "PWA"],
+    tools: ["SVELTEKIT", "VITE", "TAILWINDCSS", "PWA"],
     live_link: "https://lensforgood.com/",
     npm: false,
   },
   {
     name: "Lendhive",
     description: "Rent And Lend Items With Ease",
-    tools: ["REACT", "TYPESCRIPT", "TAILWINDCSS"],
+    tools: ["REACT", "VITE", "TYPESCRIPT", "TAILWINDCSS"],
     live_link: "https://lendhive.app",
     npm: false,
   },
