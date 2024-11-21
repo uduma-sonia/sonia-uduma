@@ -288,6 +288,14 @@ const featuredProects = [
 
 const otherProjects = [
   {
+    name: "svelte-wizard",
+    description:
+      "A flexible and highly customizable stepper component for Svelte.",
+    tools: ["SVELTE", "TYPESCRIPT"],
+    live_link: "https://svelte-wizard.netlify.app",
+    npm: true,
+  },
+  {
     name: "NextMove Agency",
     tools: ["NEXTJS", "TYPESCRIPT"],
     live_link: "https://nextmove-agency.netlify.app/",
@@ -303,7 +311,7 @@ const otherProjects = [
     npm: false,
   },
   {
-    name: "React-select-several",
+    name: "react-select-several",
     description:
       "Customizable select and input field for React that enables users to select and input multiple options.",
     tools: ["NEXTJS", "TYPESCRIPT"],
