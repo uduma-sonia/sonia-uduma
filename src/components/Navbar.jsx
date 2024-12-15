@@ -42,14 +42,14 @@ export default function Navbar() {
         >
           Email
         </a>
-        <a
+        {/* <a
           href="https://drive.google.com/file/d/1V0FQ-RHkBqYz8nvjC5UFmZqPD8irJN2l/view?usp=sharing"
           target="_blank"
           className="lg:hidden"
           rel="noopener noreferrer"
         >
           Resume
-        </a>
+        </a> */}
       </div>
     </nav>
   );

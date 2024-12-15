@@ -69,7 +69,7 @@ export default function Hero() {
                 <IoMailOutline size="0.8rem" />
                 Email
               </a>
-              <a
+              {/* <a
                 className="flex text-slate-200 border px-3 py-2 rounded-md border-gray-700 font-light text-sm items-center gap-1 hover:scale-110 transition ease-in-out duration-500"
                 href="https://drive.google.com/file/d/1V0FQ-RHkBqYz8nvjC5UFmZqPD8irJN2l/view?usp=sharing"
                 target="_blank"
@@ -77,7 +77,7 @@ export default function Hero() {
               >
                 <FiDownload size="0.8rem" />
                 Resume
-              </a>
+              </a> */}
             </div>
           </div>
 
